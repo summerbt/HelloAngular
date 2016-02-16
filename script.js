@@ -16,7 +16,7 @@ angular.module('myApp', [])
         return function (input) {
             input = (input === undefined || input === null) ? '' : input;
             return input.toLowerCase().replace("/\b([a-b])/", function (change) {
-return
+                return change.ToUpperCase;
             });
 
         }
