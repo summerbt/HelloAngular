@@ -15,8 +15,8 @@ angular.module('myApp', [])
         //defining the filter function
         return function (input) {
             input = (input === undefined || input === null) ? '' : input;
-            return input.toLowerCase().replace("/\b([a-b])/", function (change) {
-                return change.ToUpperCase;
+            return input.toString().toLowerCase().replace(/\b([a-z])/, function (change) {
+                return change.toUpperCase();
             });
 
         }
