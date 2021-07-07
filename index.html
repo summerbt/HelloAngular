@@ -37,7 +37,7 @@
                 <h1 ng-repeat="number in numbers track by $index" ng-class="{highlight:newValue=='5'}">{{ number }}</h1>
                 <button ng-click="numbers.push(numbers.length)">Push</button>
                 <button ng-click="numbers.pop()">Pop</button>
-                <button ng-click="numbers=[]">Clear</button>
+                <button ng-click="numbers.length = 0">Clear</button>
             </div>
         </div>
     </div>
